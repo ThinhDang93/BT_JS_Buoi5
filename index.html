@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- Quản lý tuyển sinh  -->
+      <div>
+        <h3 class="text-center">Quản lý tuyển sinh</h3>
+        <input
+          type="number"
+          id="diemChuan"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Nhập điểm chuẩn"
+        />
+        <input
+          type="char"
+          id="khuVuc"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Nhập khu vực"
+        />
+        <input
+          type="number"
+          id="doiTuong"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Nhập đối tượng"
+        />
+        <input
+          type="number"
+          id="diemMon1"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Nhập điểm môn thứ nhất"
+        />
+        <input
+          type="number"
+          id="diemMon2"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Nhập điểm môn thứ hai"
+        />
+        <input
+          type="number"
+          id="diemMon3"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Nhập điểm môn thứ ba"
+        />
+
+        <button
+          id="Ketqua"
+          class="w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition"
+        >
+          Kết quả
+        </button>
+        <div id="KetQuaTS"></div>
+      </div>
+      <br /><br /><br />
+
+      <!-- Tính tiền điện  -->
+      <div>
+        <h3 class="text-center">Tính tiền điện</h3>
+        <input
+          type="string"
+          id="hoTen"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Nhập Họ và tên"
+        />
+        <input
+          type="number"
+          id="soKW"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Nhập số KW"
+        />
+        <button
+          id="tienDien"
+          class="w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition"
+        >
+          Kết quả
+        </button>
+        <div id="TinhTienDien"></div>
+      </div>
+      <br /><br /><br />
+
+      <!-- Tính thuế thu nhập cá nhân  -->
+      <div>
+        <h3 class="text-center">Tính thuế thu nhập cá nhân</h3>
+        <input
+          type="string"
+          id="hovaTen"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Nhập Họ và tên"
+        />
+        <input
+          type="number"
+          id="tongThuNhap"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Tổng thu nhập năm"
+        />
+        <input
+          type="number"
+          id="soNguoi"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Số người phụ thuộc"
+        />
+
+        <button
+          id="tienThue"
+          class="w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition"
+        >
+          Kết quả
+        </button>
+        <div id="TinhTienThue"></div>
+      </div>
+      <br /><br /><br />
+
+      <!-- Tính tiền cáp  -->
+      <div>
+        <h3 class="text-center">Tính tiền cáp</h3>
+        <label for="customerType">Chọn loại khách hàng</label>
+        <select
+          id="customerType"
+          name="customerType"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+        >
+          <option value="" disabled selected></option>
+          <option value="nhadan">Nhà dân</option>
+          <option value="doanhnghiep">Doanh nghiệp</option>
+        </select>
+
+        <input
+          type="string"
+          id="maKhachhang"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Nhập mã khách hàng"
+        />
+        <input
+          type="number"
+          id="soKenhCaoCap"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+          placeholder="Nhập số kênh cao cấp"
+        />
+        <input
+          type="number"
+          id="connections"
+          name="connections"
+          placeholder="Số kết nối"
+          class="w-full p-2 my-5 border rounded-lg focus:outline-none focus:ring focus:border-blue-500 hidden"
+        />
+        <button
+          id="tienCap"
+          class="w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition"
+        >
+          Kết quả
+        </button>
+        <div id="TinhTienCap"></div>
+      </div>
+      <br /><br /><br />
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
